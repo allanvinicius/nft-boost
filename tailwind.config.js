@@ -17,6 +17,14 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        poppins: ["var(--font-poppins)"]
+      },
+      colors: {
+        "blue-primary": "#1D4FFE",
+        "green-primary": "#4BCE97",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
