@@ -21,6 +21,9 @@ module.exports = {
         inter: ["var(--font-inter)"],
         poppins: ["var(--font-poppins)"]
       },
+      maxWidth: {
+        grid: "77.5rem",
+      },
       colors: {
         "blue-primary": "#1D4FFE",
         "green-primary": "#4BCE97",

@@ -1,8 +1,14 @@
+import ContainerGrid from "@/components/container";
+import TitleSection from "@/components/titleSection";
+
 export default function Home() {
   return (
     <>
-      <h1 className="font-poppins">Hello World</h1>
-      <p className="font-inter">Olá</p>
+      <section>
+        <ContainerGrid>
+          <TitleSection subtitle="Seleção Mensal" title="Destaque do Mês" />
+        </ContainerGrid>
+      </section>
     </>
   );
 }
