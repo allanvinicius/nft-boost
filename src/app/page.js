@@ -7,6 +7,8 @@ export default function Home() {
       <section>
         <ContainerGrid>
           <TitleSection subtitle="Seleção Mensal" title="Destaque do Mês" />
+
+          <TitleSection subtitle="Destaque em Coleções" title="Coleções notáveis" />
         </ContainerGrid>
       </section>
     </>
