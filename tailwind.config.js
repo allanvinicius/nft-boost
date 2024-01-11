@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -19,14 +19,20 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
-        poppins: ["var(--font-poppins)"]
+        poppins: ["var(--font-poppins)"],
       },
       maxWidth: {
         grid: "77.5rem",
+        cardNft: "17.4rem",
+      },
+      height: {
+        areaImageNft: "14.7rem",
       },
       colors: {
         "blue-primary": "#1D4FFE",
         "green-primary": "#4BCE97",
+        "card-nft": "#131317",
+        "fav": "#05030A",
       },
       keyframes: {
         "accordion-down": {
@@ -45,4 +51,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
