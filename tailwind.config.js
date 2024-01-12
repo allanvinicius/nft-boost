@@ -24,6 +24,7 @@ module.exports = {
       maxWidth: {
         grid: "77.5rem",
         cardNft: "17.4rem",
+        cardCollector: "37rem",
       },
       height: {
         areaImageNft: "14.7rem",
@@ -32,7 +33,7 @@ module.exports = {
         "blue-primary": "#1D4FFE",
         "green-primary": "#4BCE97",
         "card-nft": "#131317",
-        "fav": "#05030A",
+        fav: "#05030A",
       },
       keyframes: {
         "accordion-down": {
