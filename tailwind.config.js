@@ -16,6 +16,13 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    screens: {
+      "@tablet": "640px",
+
+      "@laptop": "1024px",
+
+      "@desktop": "1280px",
+    },
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
@@ -25,6 +32,8 @@ module.exports = {
         grid: "77.5rem",
         cardNft: "17.4rem",
         cardCollector: "37rem",
+        logoMobile: "10rem",
+        areaNav: "48.3rem",
       },
       height: {
         areaImageNft: "14.7rem",
