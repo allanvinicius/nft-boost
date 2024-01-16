@@ -34,6 +34,7 @@ module.exports = {
         cardCollector: "37rem",
         logoMobile: "10rem",
         areaNav: "48.3rem",
+        leftContFooter: "20.25rem",
       },
       height: {
         areaImageNft: "14.7rem",
