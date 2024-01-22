@@ -56,6 +56,7 @@ module.exports = {
         "green-primary": "#4BCE97",
         "card-nft": "#131317",
         fav: "#05030A",
+        hoverButtonCarrousel: "#07050F",
       },
       keyframes: {
         "accordion-down": {
