@@ -1,5 +1,5 @@
 import ContainerGrid from "../container";
-import TitleSection from "../titleSection";
+import TitleSection from "../title-section";
 import CarrouselCards from "./carrousel-cards";
 
 export default function SectionCarrousel({ subtitle, title, data }) {
