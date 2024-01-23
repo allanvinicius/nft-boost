@@ -13,6 +13,7 @@ import thumb09 from "@/assets/img-nft/09.jpg";
 import thumb10 from "@/assets/img-nft/10.jpg";
 import thumb11 from "@/assets/img-nft/11.jpg";
 import thumb12 from "@/assets/img-nft/12.jpg";
+import SectionCollectors from "@/components/section-collectors";
 
 const featuredCollections = [
   {
@@ -111,6 +112,8 @@ export default function Home() {
         subtitle="Seleção Mensal"
         data={featuredEmphasis}
       />
+
+      <SectionCollectors />
 
       <SectionCarrousel
         title="Tendências"
