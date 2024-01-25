@@ -15,6 +15,7 @@ import thumb11 from "@/assets/img-nft/11.jpg";
 import thumb12 from "@/assets/img-nft/12.jpg";
 import SectionCollectors from "@/components/section-collectors";
 import SectionBanner from "@/components/section-banner";
+import SectionFaq from "@/components/section-faq";
 
 const featuredCollections = [
   {
@@ -123,6 +124,8 @@ export default function Home() {
       />
 
       <SectionBanner />
+
+      <SectionFaq />
     </>
   );
 }
