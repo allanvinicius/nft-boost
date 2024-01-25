@@ -14,6 +14,7 @@ import thumb10 from "@/assets/img-nft/10.jpg";
 import thumb11 from "@/assets/img-nft/11.jpg";
 import thumb12 from "@/assets/img-nft/12.jpg";
 import SectionCollectors from "@/components/section-collectors";
+import SectionBanner from "@/components/section-banner";
 
 const featuredCollections = [
   {
@@ -120,6 +121,8 @@ export default function Home() {
         subtitle="Em Tendência"
         data={featuredTendencies}
       />
+
+      <SectionBanner />
     </>
   );
 }
