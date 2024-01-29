@@ -17,7 +17,7 @@ const footerNav = [
 
 export default function Footer() {
   return (
-    <footer className="py-10 @laptop:pt-32 @laptop:pb-14">
+    <footer className="py-10 @laptop:pt-32 @laptop:pb-14 bg-footerBg bg-no-repeat">
       <ContainerGrid className="flex flex-col @laptop:flex-row justify-between gap-10 ">
         <div className="text-left max-w-full @laptop:max-w-leftContFooter">
           <Image src={logoNFTBoost} alt="logo" />
@@ -39,7 +39,12 @@ export default function Footer() {
               <ul className="space-y-4">
                 {items.map((item, index) => (
                   <li key={index}>
-                    <Link href={""}>{item}</Link>
+                    <Link
+                      href={""}
+                      className="hover:text-blue-primary transition-all ease-linear"
+                    >
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>

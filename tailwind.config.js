@@ -27,6 +27,7 @@ module.exports = {
       backgroundImage: {
         heroBg: "url('../assets/bg-hero.svg')",
         bannerBg: "url('../assets/bg-banner.svg')",
+        footerBg: "url('../assets/bg-footer.svg')",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
