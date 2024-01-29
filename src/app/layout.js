@@ -20,6 +20,12 @@ const poppins = Poppins({
 export const metadata = {
   title: "NFTBoost | Explore um Universo Digital de Colecionáveis Únicos",
   description: "Projeto criado para o curso codeboost",
+  icons: [
+    {
+      rel: "icon",
+      url: "/favicon.png",
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
