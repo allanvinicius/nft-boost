@@ -28,8 +28,6 @@ export default function CardsHero() {
       },
     });
 
-    
-
     tl.to(cardLeft, {
       left: 0,
     }).to(
