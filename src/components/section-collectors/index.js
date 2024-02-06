@@ -1,3 +1,11 @@
+"use client";
+
+import { useRef, useEffect } from "react";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import CardCollector from "../cardCollectors";
 import ContainerGrid from "../container";
 import TitleSection from "../title-section";
@@ -63,6 +71,30 @@ const collectors = [
 ];
 
 export default function SectionCollectors() {
+  const areaCollectorRef = useRef(null);
+
+  useEffect(() => {
+    const areaCollector = areaCollectorRef.current;
+
+    gsap.fromTo(
+      areaCollector,
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power3.out",
+        duration: 2,
+        scrollTrigger: {
+          trigger: areaCollector,
+          start: "top-=300 center",
+        },
+      }
+    );
+  }, []);
+
   return (
     <section className="py-10 @desktop:py-28">
       <ContainerGrid>
@@ -71,7 +103,10 @@ export default function SectionCollectors() {
           title="Principais colecionadores"
         />
 
-        <div className="grid grid-cols-1 @tablet:grid-cols-2 gap-x-4 @desktop:gap-x-8 gap-y-4">
+        <div
+          className="grid grid-cols-1 @tablet:grid-cols-2 gap-x-4 @desktop:gap-x-8 gap-y-4"
+          ref={areaCollectorRef}
+        >
           {collectors.map(({ image, name, price, percentage }, index) => (
             <CardCollector
               key={index}
